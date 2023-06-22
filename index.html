@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>ESC190: Data Structures and Algorithms (Winter 2023)</title>
+<link rel="shortcut icon" href="favicon2.ico" type="image/x-icon" >
+
+
+  <!-- bootstrap -->
+  <!-- <link rel="stylesheet" href="./style/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/bootstrap-theme.min.css">
+  <link href="./style/newstyle.css" rel="stylesheet" type="text/css">
+  <body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a href="http://www.cs.toronto.edu/~guerzhoy/180/">
+      <img src="engsci_crest.gif" style="height:40px; float: left; margin-left: 20px; margin-right: 20px;" alt = "engsci crest"></a>
+      <a class="navbar-brand" href="http://www.cs.toronto.edu/~guerzhoy/180/">ESC180</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="infosheet.pdf">Syllabus</a></li>
+        <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#assignments">Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#logistics">Logistics</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#info">Course info</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#reading">Reading</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="http://piazza.com/utoronto.ca/fall2022/esc180/">Piazza</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <h1 class="display-5">ESC190: Data Structures and Algorithms (Winter 2023)</h1>
+
+
+
+ <h3>Course staff</h3>
+      <div class="row">
+
+
+        <div class="instructor">
+          <a href="http://www.cs.toronto.edu/~guerzhoy/">
+            <img class="headshot" src="imgs/mike2018sq.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+        <div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/BillShi.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+        <div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/QingyuanWu.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+        <div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/SerenaLiu.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/JasonZhang.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+ 	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/LindyZhai.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/AnnieGao.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/QinghaoZhang.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/HannaZhang.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+                
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/NatalieVolk.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/CindyBui.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<!--<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/NhienTranNguyen.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>-->
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/YuntaoWu.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/EmersonGrabke.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/JuliaWiercigroch.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/GeorgeSaad.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/FernandoAssad.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/HaochenWang.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/GuanghanWang.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/SamanthaUnger.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/BrianChen.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/AidanDempster.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/QiLinXue.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+	<div class="instructor">
+          <a href="labs.html">
+            <img class="headshot" src="imgs/JonahChen.png" style="text-align:center;" alt = "photo of ">
+            <div style="text-align:center;"></div>
+          </a>
+        </div>
+
+
+      </div>
+      <br />
+
+
+      <p><strong>Course description</strong>&nbsp;&nbsp; This course serves as an the second half of the introduction to <a href = "http://www.paulgraham.com/knuth.html">computer programming</a> and <a href = "http://izquotes.com/quote/50993">computer science</a>. We will introduce advanced features of the Python programming language, and introduce the C programming language. We will implemente data structures and algorithms in Python and C, and analyze them. We will discuss good practices in software engineering (designing and building large software systems). We will analyze the efficiency of algorithms, and discuss designing efficient algorithms. Various research areas in computer science (AI, software engineering research, the theory of computation, etc.) will be introduced throughout the term. 
+
+
+
+
+
+
+    </div>
+
+    <div style="text-align:center; padding:40px 0px 0px 0px;">
+      <a href="./calendar.html">
+      <button type="button" class="btn btn-info btn-lg">Calendar</button>
+      </a>
+      <a href="./infosheet.pdf">
+      <button type="button" class="btn btn-success btn-lg">Syllabus</button>
+      </a>
+      <a href="http://piazza.com/utoronto.ca/fall2022/esc180/">
+      <button type="button" class="btn btn-danger btn-lg">Piazza Forum</button>
+      </a>
+
+      <a href="https://www.gradescope.com/courses/487299">
+      <button type="button" class="btn btn-secondary btn-lg">Gradescope</button>
+      </a>
+    </div>
+  </div>
+
+
+	
+
+ 
+  <section id="Resources">
+  <div class="container">
+    <h2>Projects</h2>
+	<p>Installing Visual Studio Code for C <a href = "https://code.visualstudio.com/docs/languages/cpp">overview</a>.
+	<p>On Windows <a href = "https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false">Visual C++ Community Edition</a> is substantially better than Visual Studio Code. (Not available on Mac or Linux).
+    <dl>
+
+  </section>
+
+
+  <section id="Reading">
+  <div class="container">
+    <h2>Books</h2>
+    <ul>
+    	<li>K. King, <i>C Programming: A Modern Approach</i>, 2nd ed
+    	<li>B. Kernighan and D. Ritchie, <i>The C Programming Language</i>, 2nd ed.
+    	<li>S. Skiena, <i>The Algorithm Design Manual</i>, 2nd ed.
+    </ul>
+    <dl>
+
+  </section>
+
+
+
+
+  <section id="Projects">
+  <div class="container">
+    <h2>Projects</h2>
+	<p><a href = "proj/proj1/autocomplete.pdf"><b>Project 1</b></a>. <a href = "proj/proj1/cities.txt">cities.txt</a>, <a href = "proj/proj1/wiktionary.txt">wiktionary.txt</a>, <a href = "proj/proj1/autocomplete.h">autocomplete.h</a>, <a href = "proj/proj1/main.c">main.c</a>. due Feb 14 at 10:59pm on Gradescope 
+
+	<p><a href = "proj/proj2/"><b>Project 2</b></a>. Due Apr. 3 at 10:59p.m. Files/code: <a href = "proj/proj2/png2bin.py">png2bin.py</a>, <a href = "proj/proj2/usepng2bin.py">usepng2bin.py</a>. <a href = "proj/proj2/seamcarving.h">seamcarving.h</a>,  <a href = "proj/proj2/c_img.c">c_img.c</a>,<a href = "proj/proj2/c_img.h">c_img.h</a>,<a href = "proj/proj2/png2bin.py">png2bin.py</a>, <a href = "proj/proj2/3x4.png">3x4.png</a>, <a href = "proj/proj2/3x4.bin">3x4.bin</a>, <a href = "proj/proj2/6x5.png">6x5.png</a>, <a href = "proj/proj2/6x5.bin">6x5.bin</a>,  <a href ="proj/proj2/HJoceanSmall.bmp">HJoceanSmall.bmp</a>, <a href = "proj/proj2/HJoceanSmall.bin">HJoceanSmall.bin</a>.
+
+    <dl>
+
+
+
+
+  <section id="Labs">
+  <div class="container">
+    <h2>Labs</h2>
+	<ul>
+		<li><b>Lab 1</b>: <a href = "labs/lab01.pdf">VS Code, Introduction to C, the C memory mode</a>. <a href = "labs/lab01.c">Solutions</a>
+		<li><b>Lab 2</b>: <a href = "labs/lab02.pdf">Pointers, strings, and Binary Search Deluxe</a>. <a href = "labs/lab02.c">Solutions</a> (except for Binary Search Deluxe, which is part of Project 1)
+		<li><b>Lab 3</b>: <a href = "labs/lab03.pdf">structs, blocks of structs, gcc, and header files</a>. <a href = "labs/lab03.c">Solutions</a> 
+		<li><i>No lab assignment during the week of Feb 6, but TAs will be available during lab time to help with Project 1. Attendance is optional.</i>
+		<li><b>Lab 4</b>: <a href = "labs/lab04.pdf">Valgrind and the C and Python memory models</a>. <b>Solutions</b>: <a href = "labs/lab4.c">lab4.c</a>, <a href = "labs/lab4.py">lab4.py</a>
+		
+		<li><b>Lab 5</b>: <a href = "labs/lab05.pdf">Linked lists and ArrayLists</a>. Download <a href = "labs/LL.c">LL.c</a>. <b>Solutions</b>: <a href = "labs/main.c">main.c</a>, <a href = "labs/list.h">list.h</a>, <a href = "labs/linkedlist.c">linkedlist.c</a>, <a href = "labs/arraylist.c">arraylist.c</a>
+		<li><b>Lab 6</b>: <a href = "labs/lab06.pdf">Implementing Queues</a>. Download: <a href = "labs/Queue.py">Queue.py</a>. <b>Solutions</b>: <a href = "labs/CircularQueue.py">CircularQueue.py</a>, <a href = "labs/cirqueue.c">cirqueue.c</a>
+		<li><b>Lab 7</b>: <a href = "labs/lab07.pdf">Dynamic programming, image files, and implementing Heaps</a>. <a href = "labs/images.html">Using image files in Lab 7</a>. Download: <a href = "labs/heaps.py">heaps.py</a>. <b>Solutions</b>: <a href = "labs/brighten.c">brighten.c</a>, <a href = "labs/heap.c">heap.c</a>
+		<li><b>Lab 8</b>: Continue working on the Labs 7-8 handout. You must show your work to a TA both on the week of Lab 7 and on the week of Lab 8.
+		<li><b>Lab 9</b>: <a href = "labs/lab09.pdf">Dijkstra's Algorithm in C</a>. <a href = "labs/dijkstra.py">dijkstra.py</a>, <a href = "labs/lab09.c">lab09.c</a>. <b>Solution</b>: <a href = "labs/lab09_soln.c">lab09_soln.c</a>
+	</ul>
+
+	<p> 
+
+  </section>
+  <section id = "Exams">
+  <div class="container">
+	<h2>Exams</h2>
+	<h4>Midterm</h4>
+	<p><a href = "midterm/2023/paper.pdf">2023 midterm</a>, <a href = "midterm/2023/solutions.c">Q1-Q4 solutions</a>, <a href = "http://xueqilin.me/esc190-notes/part3.html#L23">Q5 solution from lecture</a>
+	<p><a href = "midterm/2021">2021 midterm</a>
+	<p><a href = "midterm/2012/paper.pdf">2012 midterm</a>
+	<p><a href = "midterm/2011/paper.pdf">2011 midterm</a>
+	<h4>Exam</h4>
+	<p>The exam will be held during the exam period.
+	<p><a href = "exam/2021">2021 exam</a>
+	<p>Previous midterms and exams are available on <a href = "">skule.ca</a>
+	</div>
+  </section>
+
+  <section id = "inclusive">
+	<div class="container">
+	<h2>An inclusive environment</h2>
+	<dl>We strive to build and maintain an inclusive environment in class &mdash; an environment that allows every student to reach their full potential. Please do not hesitate to contact me and/or your preceptor to let us know if you need special accommodation or with any concerns.
+	</dl>
+	</div>
+  </div>
+  </section>
+
+<p>Design credit: <a href = "http://cs229.stanford.edu/">CS229</a>, Jan 2019.
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
+
